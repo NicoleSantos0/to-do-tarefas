@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Colunas de status (ex: To Do, Doing, Done) */
+.status-column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    min-height: 70vh;
+    margin-bottom: 2rem;
+}
+
+/* Cartões de tarefa */
+.task-card {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-left: 6px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.task-card:hover {
+    transform: scale(1.02);
+}
+
+/* Prioridades com cores */
+.task-card.low {
+    border-left-color: #28a745;
+}
+
+.task-card.medium {
+    border-left-color: #ffc107;
+}
+
+.task-card.high {
+    border-left-color: #dc3545;
+}
+
+/* Badges de prioridade */
+.priority-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+.badge-low {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-high {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Botões pequenos */
+.btn-sm {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.btn-sm:hover {
+    background-color: #0056b3;
+}
+
+/* Campos de formulário */
+.form-control,
+.form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
